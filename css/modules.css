@@ -1,0 +1,47 @@
+select{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+body{
+
+    background-color:  rgba(97, 91, 82, 0.753) ;
+}
+main{
+    /* display: inline-block; */
+    overflow: auto;
+    margin: 10px auto 10px auto;
+}
+
+.imgInfo{
+    border: 3px rgb(3, 3, 3) solid;
+    width:32%;
+    height: 350px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    background-color: rgba(140, 94, 34, 0.425);
+    color: rgb(20, 20, 19);
+}
+.imgInfo img{
+    width: 75%;
+    height: 70%;
+}
+#photo-template{
+    display: none;
+}
+.imgInfo h2{
+    margin: 5px auto 10px auto;
+    font-weight: bolder;
+    color: gainsboro;
+}
+.imgInfo p{
+    margin: 15px auto 10px auto;
+}
+footer{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    background-color: gray;
+    color: honeydew;
+}
