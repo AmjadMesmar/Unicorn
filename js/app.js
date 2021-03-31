@@ -5,7 +5,7 @@
 let keywordsArray = [];
 let hornsArray = [];
 
-$.ajax('/data/page-1.json').then(unicornArray => {
+$.ajax('./data/page-1.json').then(unicornArray => {
   // console.log(unicornArray);
   unicornArray.forEach(unicornData => {
     // console.log(unicornData);
