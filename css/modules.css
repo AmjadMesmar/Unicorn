@@ -19,7 +19,7 @@ header{
         margin: 10px auto 10px auto;
     }
     
-    .displayedImage{
+    .displayedImage, .firstPage, .secondPage{
         border: 3px rgb(3, 3, 3) solid;
         width:32%;
         height: 350px;
@@ -29,16 +29,16 @@ header{
         background-color: rgba(140, 94, 34, 0.425);
         color: rgb(20, 20, 19);
     }
-    .displayedImage img{
+    .displayedImage img, .firstPage img, .secondPage img{
         width: 75%;
         height: 70%;
     }
-    .displayedImage h2{
+    .displayedImage h2, .firstPage h2, .secondPage h2{
         margin: 5px auto 10px auto;
         font-weight: bolder;
         color: gainsboro;
     }
-    .displayedImage p{
+    .displayedImage p, .firstPage p, .secondPage p{
         margin: 15px auto 10px auto;
     }
     footer{
