@@ -65,23 +65,23 @@ function Unicorn(uniData) {
 
 Unicorn.allUnicorn = [];
 
-Unicorn.prototype.renderData = function () {
-  let divClone = $('.displayedImage').first().clone();
-  divClone.find('h2').text(this.title);
-  divClone.attr('class', `${this.keyword} ${this.horns} firstPage`);
-  divClone.find('img').attr('src', `${this.image_url}`);
-  divClone.find('p').text(this.description);
-  $('main').append(divClone);
-};
+// Unicorn.prototype.renderData = function () {
+//   let divClone = $('.displayedImage').first().clone();
+//   divClone.find('h2').text(this.title);
+//   divClone.attr('class', `${this.keyword} ${this.horns} firstPage`);
+//   divClone.find('img').attr('src', `${this.image_url}`);
+//   divClone.find('p').text(this.description);
+//   $('main').append(divClone);
+// };
 
-Unicorn.prototype.renderData2 = function () {
-  let divClone = $('.displayedImage').first().clone();
-  divClone.find('h2').text(this.title);
-  divClone.attr('class', `${this.keyword} ${this.horns} secondPage`);
-  divClone.find('img').attr('src', `${this.image_url}`);
-  divClone.find('p').text(this.description);
-  $('main').append(divClone);
-};
+// Unicorn.prototype.renderData2 = function () {
+//   let divClone = $('.displayedImage').first().clone();
+//   divClone.find('h2').text(this.title);
+//   divClone.attr('class', `${this.keyword} ${this.horns} secondPage`);
+//   divClone.find('img').attr('src', `${this.image_url}`);
+//   divClone.find('p').text(this.description);
+//   $('main').append(divClone);
+// };
 
 // mustache.js protoptype
 Unicorn.prototype.templateUnicorn =function()
@@ -121,7 +121,7 @@ const renderSortedArray = () => {
     divClone.find('h2').text(allArray[i].title);
     divClone.find('img').attr('src', `${allArray[i].image_url}`);
     divClone.find('p').text(allArray[i].description);
-    if (allArray[i].page === 1) {
+    if (allArray[i].page === 'firstPage') {
       divClone.attr('class', `${allArray[i].keyword} ${allArray[i].horns} firstPage`);}
     else {
       divClone.attr('class', `${allArray[i].keyword} ${allArray[i].horns} secondPage`);}
